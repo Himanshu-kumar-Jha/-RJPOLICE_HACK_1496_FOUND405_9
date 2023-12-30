@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybercrime Complaint Form</title>
+    <style>
+        .header {
+            background-color: rgb(0, 36, 60);
+            padding : 8px;
+        }
+        .header a {
+            float: left;
+            color: rgb(253, 252, 252);
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 4px;
+        }
+
+        .header a.logo {
+            font-size: 15px;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .header a:hover {
+            background-color: rgb(255, 255, 255);
+            color: black;
+        }
+
+        .header-right {
+            float: right;
+        }
+
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f1e1e1;
+        }
+
+        form {
+            max-width: 1000px;
+            margin: 10px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        select {
+            width: 100%;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        button {
+            background-color: rgb(145, 14, 14);
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(14, 145, 14);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="logo">
+        <div class="header">
+            <img src="https://upload.wikimedia.org/wikipedia/en/c/c4/Rajasthan_Police_Logo.png" width="40px"
+                height="40px" id="img1">
+            <a href="#default" class="logo">Rajasthan Police</a>
+            <div class="header-right">
+                <a class="active" href="#home">Contact</a>
+                <a href="#contact">Welfare</a>
+                <a href="#about">About</a>
+            </div>
+        </div>
+    </div>
+
+    <form>
+        <h1 align="center"><u>COMPLAINT FORM</u></h1>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="currentAddress">Current Address:</label>
+        <input type="text" id="currentAddress" name="currentAddress" required>
+
+        <label for="permanentAddress">Permanent Address:</label>
+        <input type="text" id="permanentAddress" name="permanentAddress" required>
+
+        <label for="pincode">Pincode:</label>
+        <input type="text" id="pincode" name="pincode" required>
+
+        <label for="nationality">Nationality:</label>
+        <input type="text" id="nationality" name="nationality" required>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required>
+
+        <label for="aadharNumber">Aadhar Number:</label>
+        <input type="text" id="aadharNumber" name="aadharNumber" required>
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+        <label for="transactionId">Transaction ID:</label>
+        <input type="text" id="transactionId" name="transactionId" required>
+
+        <label for="bankAccountNumber">Bank Account Number:</label>
+        <input type="text" id="bankAccountNumber" name="bankAccountNumber" required>
+
+        <label for="selectBank">Select Bank:</label>
+        <select id="selectBank" name="selectBank">
+            <option value="sbi">SBI</option>
+            <option value="hdfc">HDFC</option>
+            <option value="pnb">Punjab National Bank</option>
+        </select>
+
+        <label for="timeOfIncidence">Time of Incidence:</label>
+        <input type="time" id="timeOfIncidence" name="timeOfIncidence" required>
+
+        <label for="appUsed">App Used:</label>
+        <select id="appUsed" name="appUsed">
+            <option value="paytm">Paytm</option>
+            <option value="teenpatti">Teenpatti</option>
+            <option value="gpay">GPay</option>
+            <option value="winzo">Winzo</option>
+        </select>
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="policeStationCode">Nearest Police Station Code:</label>
+        <input type="text" id="policeStationCode" name="policeStationCode" required>
+
+        <label for="screenshot">Screenshot (if any):</label>
+        <input type="file" id="screenshot" name="screenshot">
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea>
+
+        <button type="submit" id="submit">SUBMIT</button>
+    </form>
+
+</body>
+
+</html>
